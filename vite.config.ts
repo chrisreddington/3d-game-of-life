@@ -4,7 +4,7 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/3d-gol/',
+  base: '/3d-game-of-life/',
   plugins: [
     vue(),
   ],
