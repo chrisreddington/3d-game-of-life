@@ -202,10 +202,39 @@ const onWindowResize = () => {
   padding: 1rem;
   background: rgba(22, 27, 34, 0.9);
   display: flex;
-  gap: 1rem;
+  flex-wrap: wrap;
+  gap: 0.75rem;
   justify-content: center;
   align-items: center;
   backdrop-filter: blur(8px);
+}
+
+@media (max-width: 600px) {
+  .controls {
+    padding: 0.75rem;
+    gap: 0.5rem;
+  }
+
+  button {
+    padding: 0.4rem 0.75rem;
+    font-size: 13px;
+    min-width: 80px;
+  }
+
+  .speed-control {
+    flex: 1;
+    min-width: 200px;
+    justify-content: space-between;
+  }
+
+  .speed-control input[type="range"] {
+    width: 80px;
+  }
+
+  .generation {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 button {
